@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+}
+.nav-container{
+    background-color: beige;
+}
+nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    color: white;
+    font-size: 70px;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+}
+nav h2{
+    color: black;
+}
+.list-container{
+    display: flex;
+    gap: 15px;
+}
+.list-container li{
+    display: inline-block;
+    color: black;
+}
