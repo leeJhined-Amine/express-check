@@ -3,17 +3,20 @@ const express = require('express');
 const app = express();
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({extended: true}));
-app.use('/public', express.static('/public'))
+// app.use('/public', express.static('/public'))
 
 //calling routes
-const contactRoutes = require('./routes/contactRoutes');
 const homeRoutes = require('./routes/homeRoutes');
+const contactRoutes = require('./routes/contactRoutes');
 const servicesRoutes = require('./routes/servicesRoutes')
 
 //using routes
-app.use(contactRoutes);
-app.use(homeRoutes);
-app.use(servicesRoutes);
+app.get('/', (req, res) => {
+    console.log("it went through")
+    res.send("hello")
+});
+// app.use(contactRoutes);
+// app.use(servicesRoutes);
 
 
 //server launching
