@@ -1,3 +1,3 @@
 exports.show = (req, res) => {
-    res.send('Hello');
+    res.render('home');
 }
