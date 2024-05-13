@@ -1,0 +1,68 @@
+*{
+    margin: 0%;
+}
+body{
+    height: 100vh;
+    background-color: black;
+}
+.section-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-container{
+    background-color: rgb(83, 21, 165);
+}
+nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h2{
+    color: black;
+}
+.list-container{
+    display: flex;
+    gap: 15px;
+}
+.list-container li{
+    display: inline-block;
+    color: black;
+}
+.list-container li a{
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+}
+section{
+    background-color: beige;
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+}
+form{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+input{
+    width: 80%;
+    height: 20px;
+    margin-left: 10px;
+}
+button{
+    padding: 10px 60px;
+}
